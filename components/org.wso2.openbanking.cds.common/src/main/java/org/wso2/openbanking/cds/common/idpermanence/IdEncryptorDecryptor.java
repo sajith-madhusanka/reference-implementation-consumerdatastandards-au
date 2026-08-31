@@ -48,7 +48,7 @@ public class IdEncryptorDecryptor {
      * @param secret secret key
      * @return SecretKeySpec derived from the secret, or null if derivation fails
      */
-    public static void getKey(String secret) {
+    public static SecretKeySpec getKey(String secret) {
         MessageDigest sha = null;
         try {
            byte[] secretBytes = secret.getBytes(StandardCharsets.UTF_8);
